@@ -1,0 +1,184 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(129, 212, 250);
+  }
+
+/*Menylinje*/
+  .container-fluid {
+      background-color: blue;
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+  }
+
+/*Sidemeny*/
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-color: rgb(232, 243, 83);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: rgb(16, 16, 100);
+  }
+
+.container {
+    position: absolute;
+    top: 500;
+    width: 100%;
+    height: 100%;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Plassering og utseende på knapp*/
+.btn-white {
+    background-color: rgb(236, 41, 41);
+    color: #fff;
+    font-size: 24px;
+    position: fixed;
+    top: 50%;
+    left: 41%;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*Bilde/logo*/
+#logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Regler*/
+#reglerSide {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(245, 247, 139);
+}
+
+#reglerTekst {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Om*/
+#omSide {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(137, 238, 171);
+}
+
+#om {
+  max-width: 60ch;
+  margin-left: 15px;
+}
+
+/*Kontakt*/
+#kontaktSide {
+  font-family: "Lato", sans-serif;
+  background-color: rgb(96, 238, 167);
+}
+
+
+#kontakt{
+max-width: 60ch;
+margin-left: 15px;
+}
